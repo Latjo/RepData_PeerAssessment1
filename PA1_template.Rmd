@@ -108,7 +108,7 @@ Imputing values, based on the mean number of steps of the corresponding interval
 activityDT[, weekday := weekdays(date, abbreviate = TRUE)]
 
 # Add a column telling whether the weekday is in the week or weekend
-activityDT[, weekday_type := ifelse(weekday == "lör" | weekday == "sön", "weekend", "weekday")]
+activityDT[, weekday_type := ifelse(weekday == "lÃ¶r" | weekday == "sÃ¶n", "weekend", "weekday")]
 
 # Delete the weekday column
 activityDT <- activityDT[, c(1,2,3,5)]
